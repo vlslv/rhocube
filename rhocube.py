@@ -201,7 +201,7 @@ class Cube:
         
     def build_kdtree(self):
 
-        print "Building kdtree"
+        print ("Building kdtree")
         mat = N.vstack((self.X.flatten(order='F'),self.Y.flatten(order='F'),self.Z.flatten(order='F'))).T
         self.kdtree = spatial.cKDTree(mat)   # kd-tree is in unit hypercell space
 

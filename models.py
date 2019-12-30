@@ -26,7 +26,7 @@ def spiral3D(h,Rbase,nturns,rtube,envelope='dualcone'):
         elif envelope == 'cylinder':
             zprogression = Rbase
         else:
-            raise Exception, "Invalid value for 'envelope'. Must be either of: ['dualcone','cylinder']."
+            raise Exception("Invalid value for 'envelope'. Must be either of: ['dualcone','cylinder'].")
         
         x = zprogression * N.cos(N.abs(t))
         y = zprogression * N.sin(N.abs(t))
